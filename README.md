@@ -19,7 +19,7 @@ java -jar target/openapi-spring-1.0.0.jar
 ## Overview  
 Swagger UI is available on http://localhost:8080 or OpenShift Route (service needs to be exposed)
 
-All three endpoints randomly return their allowed HTTP Status codes (try with e.g. 
+All three endpoints randomly return their allowed HTTP Status codes to test the compensations (try with e.g. 
 ```
 [🎩︎mnagel openapi-generator] (master) $ curl -i -X DELETE "http://mock-api-pam.apps-crc.testing/api/v1/sagapoc/d8d6f2ba-7edb-4469-bf68-abb64005daf7/varmistus" -H "accept: application/json"
 HTTP/1.1 404 
