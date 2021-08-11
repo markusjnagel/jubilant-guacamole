@@ -9,6 +9,12 @@ Runnable on OpenShift via
 ```
 oc new-app registry.access.redhat.com/openjdk/openjdk-11-rhel7~https://github.com/markusjnagel/jubilant-guacamole.git
 ```
+or locally via
+```
+mvn clean package
+java -jar target/openapi-spring-1.0.0.jar 
+```
+(I left the generated name and tags in the pom.xml - it's just a mockup, after all)
 
 ## Overview  
 Swagger UI is available on http://localhost:8080 or OpenShift Route (service needs to be exposed)
